@@ -40,7 +40,7 @@ Typing npm start on the terminal
 
 
 ### Installation and Setup
-Install Node Modules ithrough the terminal 
+Install React through the terminal 
 
     npx create-react-app my-app
 
