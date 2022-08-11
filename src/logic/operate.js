@@ -1,5 +1,5 @@
 import Big from 'big.js';
-//to add functions to use
+// to add functions to use
 export default function operate(numberOne, numberTwo, operation) {
   const one = Big(numberOne);
   const two = Big(numberTwo);

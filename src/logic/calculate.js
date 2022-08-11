@@ -7,11 +7,11 @@ function isNumber(item) {
 /**
  *Given a button name and a calculator data object, return an updated
  *calculator data object.
- * 
+ *
  * to make the following in the calculator represent:
  * total: string, the running total;
  * next:  string, the next number to be operated;
- * operation:  string, operators such as +, 
+ * operation:  string, operators such as +,
  */
 
 export default function calculate(obj, buttonName) {
