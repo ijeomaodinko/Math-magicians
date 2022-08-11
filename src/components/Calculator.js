@@ -1,29 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-// eslint-disable-next-line react/prefer-stateless-function
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
+function Calculator() {
+    const [state, setState] = useState({
       total: null,
       next: null,
       operation: null,
-    };
-    this.clickHandle = this.clickHandle.bind(this);
-  }
+    });
 
-  clickHandle = (event) => {
-    const calc = calculate(this.state, event.target.textContent);
-    this.setState(calc);
+  const clickHandle = (event) => {
+    setState((prevState) => calculate(prevState, event.target.textContent));
   };
-
-  render() {
-    const {
-      total,
-      next,
-      operation,
-    } = this.state;
 
     return (
       <div className="wrapper">
