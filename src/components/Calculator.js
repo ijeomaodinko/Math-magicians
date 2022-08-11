@@ -1,48 +1,65 @@
-import React, { Component } from 'react';
+import React from 'react';
+import calculate from '../logic/calculate';
 
-class Calculator extends Component {
-  constructor() {
-    super();
+// eslint-disable-next-line react/prefer-stateless-function
+class Calculator extends React.Component {
+  constructor(props) {
+    super(props);
     this.state = {
-      result: 0,
+      total: null,
+      next: null,
+      operation: null,
     };
+    this.clickHandle = this.clickHandle.bind(this);
   }
 
+  clickHandle = (event) => {
+    const calc = calculate(this.state, event.target.textContent);
+    this.setState(calc);
+  };
+
   render() {
-    const { result } = this.state;
+    const {
+      total,
+      next,
+      operation,
+    } = this.state;
+
     return (
       <div className="wrapper">
         <div className="screen">
-          <p className="input">{result}</p>
+          <span className="input">{total}</span>
+          <span className="input">{operation}</span>
+          <span className="input">{next}</span>
         </div>
         <div className="button-box">
-          <button type="button" className="allClear">AC</button>
-          <button type="button" className="plusMinus">+/-</button>
-          <button type="button" className="percent">%</button>
-          <button type="button" className="divide last">÷</button>
+          <button type="button" onClick={this.clickHandle} className="allClear">AC</button>
+          <button type="button" onClick={this.clickHandle} className="plusMinus">+/-</button>
+          <button type="button" onClick={this.clickHandle} className="percent">%</button>
+          <button type="button" onClick={this.clickHandle} className="divide last">÷</button>
           <br />
 
-          <button type="button" className="seven"> 7 </button>
-          <button type="button" className="eight"> 8 </button>
-          <button type="button" className="nine"> 9 </button>
-          <button type="button" className="multiply  last">X</button>
+          <button type="button" onClick={this.clickHandle} className="seven">7</button>
+          <button type="button" onClick={this.clickHandle} className="eight">8</button>
+          <button type="button" onClick={this.clickHandle} className="nine">9</button>
+          <button type="button" onClick={this.clickHandle} className="multiply last">x</button>
           <br />
 
-          <button type="button" className="four">4</button>
-          <button type="button" className="five">5</button>
-          <button type="button" className="six">6</button>
-          <button type="button" className="subtract last">-</button>
+          <button type="button" onClick={this.clickHandle} className="four">4</button>
+          <button type="button" onClick={this.clickHandle} className="five">5</button>
+          <button type="button" onClick={this.clickHandle} className="six">6</button>
+          <button type="button" onClick={this.clickHandle} className="subtract last">-</button>
           <br />
 
-          <button type="button" className="one">1</button>
-          <button type="button" className="two">2</button>
-          <button type="button" className="three">3</button>
-          <button type="button" className="add  last">+</button>
+          <button type="button" onClick={this.clickHandle} className="one">1</button>
+          <button type="button" onClick={this.clickHandle} className="two">2</button>
+          <button type="button" onClick={this.clickHandle} className="three">3</button>
+          <button type="button" onClick={this.clickHandle} className="add  last">+</button>
           <br />
 
-          <button type="button" className="zero">0</button>
-          <button type="button" className="point">.</button>
-          <button type="button" className="equalto  last">=</button>
+          <button type="button" onClick={this.clickHandle} className="zero">0</button>
+          <button type="button" onClick={this.clickHandle} className="point">.</button>
+          <button type="button" onClick={this.clickHandle} className="equalto  last">=</button>
         </div>
       </div>
     );
