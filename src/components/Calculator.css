@@ -5,17 +5,16 @@
 
 body {
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: aliceblue;
-  margin-top: 6.6rem;
-  margin-bottom: 0;
 }
 
 .wrapper {
-  width: 100%;
+  display: block;
+  width: 26.1%;
   background-color: #e9eaeb;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6rem;
 }
 
 button {
@@ -53,7 +52,7 @@ button:active {
 }
 
 .screen {
-  min-width: 100%;
+  min-width: 60%;
   min-height: 4rem;
   background-color: #4357692d;
   margin-top: 0;
@@ -73,4 +72,15 @@ div.screen {
 
 p.input {
   padding-top: 1rem;
+}
+
+.imenu {
+  display: flex;
+  flex-direction: row;
+  gap: 7rem;
+}
+
+.menup {
+  font-size: 61px;
+  margin-left: 1rem;
 }
