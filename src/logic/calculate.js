@@ -4,6 +4,16 @@ function isNumber(item) {
   return !!item.match(/[0-9]+/);
 }
 
+/**
+ *Given a button name and a calculator data object, return an updated
+ *calculator data object.
+ *
+ * to make the following in the calculator represent:
+ * total: string, the running total;
+ * next:  string, the next number to be operated;
+ * operation:  string, operators such as +,
+ */
+
 export default function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {
