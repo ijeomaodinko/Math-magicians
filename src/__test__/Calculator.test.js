@@ -7,3 +7,8 @@ test('Display text on the screen', () => {
   const element = screen.getByText(/Let's do some Math/i);
   expect(element).toBeInTheDocument();
 });
+
+it('matches snapshot', () => {
+  const tree = render(<Calculator />);
+  expect(tree).toMatchSnapshot();
+});

@@ -1,39 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// const NavBar = () => {
-//   const links = [
-//     {
-//       id: 1,
-//       path: '/',
-//       text: 'Home',
-//     },
-//     {
-//       id: 2,
-//       path: '/Calculator',
-//       text: 'Calculator',
-//     },
-//     {
-//       id: 3,
-//       path: '/quotes',
-//       text: 'Quotes',
-//     },
-//   ];
-
-//   return (
-//     <nav className="navBar">
-//       <h1> Math Magicians</h1>
-//       <ul className="navList">
-//         {links.map((link) => (
-//           <li key={link.id}>
-//             <NavLink to={link.link}>{link.text}</NavLink>
-//           </li>
-//         ))}
-//       </ul>
-//     </nav>
-//   );
-// };
-
 class NavBar extends React.PureComponent {
   render() {
     return (
