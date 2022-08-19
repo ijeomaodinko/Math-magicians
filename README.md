@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magician Calculator
 
-This project contains codes that enables users use React. 
+The Math Magicians Calculator is a simple calculator thaat enables you perform simple calculations. It is built with react and has a Single Page Application that shows information like quotes, etc. 
 
 ## Built With
  - React 
@@ -31,26 +31,32 @@ If you are using a SSH key.
 Press ENTER to create your local clone. After creating it, you can open the page by opening with Visual Studio Code. 
 
 
-Typing npm start on the terminal
-
-
 ### Prerequisites
 - A modern web browser like Chrome, Safari, Firefox, etc.
 - JavaScript enabled.
 
 
 ### Installation and Setup
-Install React through the terminal 
+Install npm through the terminal 
 
-    npx create-react-app my-app
-
-### To change to the app 
-
-    cd my-app
+```markdown
+     npm install
+```
+The `npm install` command installs all dependencies used in the project
 
 ### Build the Development Serve 
 
     npm start
+    
+   The `npm start` is used to start the development server and view the application on the browser.
+   
+   
+### To Run the Test 
+To run the tests, run the following command:
+
+```markdown
+    npm test
+```
 
 ## Authors
 
@@ -59,6 +65,12 @@ Install React through the terminal
 - GitHub: [@githubhandle](https://github.com/ijeomaodinko)
 - Twitter: [@twitterhandle](https://twitter.com/iodinko)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ijeomaodinko)
+
+👤 **Cindy Dorantes**
+
+- GitHub: [@CindyDorantes](https://github.com/CindyDorantes)
+- Twitter: [@CindyDorantes10](https://twitter.com/CindyDorantes10)
+- LinkedIn: [Cindy Melisa Dorantes Sánchez](https://www.linkedin.com/in/cindydorantessanchez/)
 
 
 
