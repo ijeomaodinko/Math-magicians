@@ -40,17 +40,20 @@ Typing npm start on the terminal
 
 
 ### Installation and Setup
-Install React through the terminal 
+After cloning this project, run the following commands:
 
-    npx create-react-app my-app
+```markdown
+npm install
+npm start
+```
 
-### To change to the app 
+The `npm install` command installs all dependencies used in the project while `npm start` is used to start the development server and view the application on the browser.
 
-    cd my-app
+To run the tests, run the following command:
 
-### Build the Development Serve 
-
-    npm start
+```markdown
+npm test
+```
 
 ## Authors
 
@@ -60,7 +63,11 @@ Install React through the terminal
 - Twitter: [@twitterhandle](https://twitter.com/iodinko)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/ijeomaodinko)
 
+👤 **Cindy Dorantes**
 
+- GitHub: [@CindyDorantes](https://github.com/CindyDorantes)
+- Twitter: [@CindyDorantes10](https://twitter.com/CindyDorantes10)
+- LinkedIn: [Cindy Melisa Dorantes Sánchez](https://www.linkedin.com/in/cindydorantessanchez/)
 
 ## 🤝 Contributing
 
