@@ -10,5 +10,5 @@ test('Display text on the screen', () => {
 
 it('matches snapshot', () => {
   const tree = render(<Calculator />);
-  expect(tree).toMatchSnapshot()
+  expect(tree).toMatchSnapshot();
 });
