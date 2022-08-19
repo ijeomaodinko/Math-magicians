@@ -7,5 +7,5 @@ test('test function for key AC', () => {
         operation: null,
       }
     const buttonName = 'AC'
-    expect(calculate(obj, buttonName)).toBe({total: null, next: null, operation: null})
+    expect(calculate(obj, buttonName)).toEqual({total: null, next: null, operation: null})
 });

@@ -1,9 +1,12 @@
 import React from 'react';
 import { ReactDOM } from 'react';
-import renderer from 'react-test-renderer';
+import { render } from '@testing-library/react';
 import NavBar from '../components/NavBar';
+import '@testing-library/jest-dom';
+import { BrowserRouter as Router} from 'react-router-dom'
+
 
 it('matches snapshot', () => {
-    const tree = renderer.create(<NavBar></NavBar>).toJSON();
-    expect(tree).toMatchSnapshot()
+    const tree = render(<Router><NavBar /></Router>,);
+    expect(tree).toMatchSnapshot();
 });

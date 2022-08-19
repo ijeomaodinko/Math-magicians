@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-import renderer from 'react-test-renderer';
 import Calculator from '../components/Calculator';
 import '@testing-library/jest-dom';
 
@@ -10,6 +9,6 @@ test('Display text on the screen', () => {
 });
 
 it('matches snapshot', () => {
-  const tree = renderer.create(<Calculator />).toJSON();
+  const tree = render(<Calculator />);
   expect(tree).toMatchSnapshot()
 });
