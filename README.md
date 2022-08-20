@@ -2,7 +2,7 @@
 
 # Math Magician Calculator
 
-The Math Magicians Calculator is a simple calculator thaat enables you perform simple calculations. It is built with react and has a Single Page Application that shows information like quotes, etc. 
+The Math Magicians Calculator is a simple calculator that enables you perform simple calculations. It is built with react and has a Single Page Application that shows information like quotes, etc. 
 
 ## Built With
  - React 
@@ -10,7 +10,7 @@ The Math Magicians Calculator is a simple calculator thaat enables you perform s
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[https://ephemeral-bunny-da5e7e.netlify.app/](https://livedemo.com)
 
 
 # Getting Started
