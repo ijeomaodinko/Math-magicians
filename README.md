@@ -10,7 +10,7 @@ The Math Magicians Calculator is a simple calculator that enables you perform si
 
 ## Live Demo (if available)
 
-[https://ephemeral-bunny-da5e7e.netlify.app/](https://https://ephemeral-bunny-da5e7e.netlify.app/)
+(https://https://ephemeral-bunny-da5e7e.netlify.app/)
 
 
 # Getting Started
