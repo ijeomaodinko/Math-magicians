@@ -8,7 +8,7 @@ The Math Magicians Calculator is a simple calculator that enables you perform si
  - React 
  - CSS
 
-## Live Demo (if available)
+## Live Demo 
 
 (https://ephemeral-bunny-da5e7e.netlify.app/)
 
