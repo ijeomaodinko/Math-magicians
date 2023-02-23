@@ -15,7 +15,7 @@ body {
   align-items: center;
   justify-content: center;
   margin-left: 6rem;
-  border-radius: 12px;
+  border-radius: 19px;
 }
 
 button {
@@ -73,8 +73,8 @@ button:active {
   background-color: #4357692d;
   margin-top: 0;
   margin-bottom: 0;
-  border-top-right-radius: 12px;
-  border-top-left-radius: 12px;
+  border-top-right-radius: 19px;
+  border-top-left-radius: 19px;
   padding-top: 16px;
 }
 
